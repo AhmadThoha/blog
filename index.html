@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BlogKu - Teknologi dan Kehidupan</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-100 text-gray-800">
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+            <h1 class="text-2xl font-bold text-blue-600">🌐 BlogKu</h1>
+            <nav class="space-x-6">
+                <a href="#" class="hover:text-blue-600 font-medium">Home</a>
+                <a href="#" class="hover:text-blue-600 font-medium">Artikel</a>
+                <a href="#" class="hover:text-blue-600 font-medium">Tentang</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <section class="bg-blue-50 py-16">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-4xl font-bold text-blue-700">Selamat Datang di BlogKu</h2>
+            <p class="text-gray-600 mt-4">Tempat berbagi ide, teknologi, dan cerita kehidupan sehari-hari.</p>
+        </div>
+    </section>
+
+    <!-- Konten -->
+    <div class="max-w-7xl mx-auto px-4 py-12 grid grid-cols-1 lg:grid-cols-4 gap-10">
+        <!-- Artikel -->
+<!-- Ganti bagian <main class="lg:col-span-3 space-y-8"> menjadi: -->
+<main class="lg:col-span-3 space-y-8">
+
+  <!-- Materi 1 -->
+<div class="bg-white p-4 rounded-lg border-l-4 border-blue-500 shadow">
+  <img src="https://picsum.photos/id/1011/800/400" class="w-full h-48 object-cover rounded">
+  <div class="p-4">
+    <h3 class="font-semibold text-xl text-gray-800">Materi Kelas 10</h3>
+    <p class="text-gray-600 mt-2">
+      Belajar dasar pemrograman dengan Python, HTML, CSS, Java, dan PHP sebagai fondasi untuk membangun aplikasi dan website.
+    </p>
+    <a href="kelas10.html" class="mt-3 inline-block text-sm text-blue-600 hover:underline">
+      Baca Selengkapnya →
+    </a>
+  </div>
+</div>
+
+
+
+  <!-- Materi 2 -->
+<div id="kelas11" class="bg-white rounded-lg border-l-4 border-green-500 shadow-md overflow-hidden max-w-5xl mx-auto">
+  <img src="https://picsum.photos/id/1025/1200/500" class="w-full h-64 object-cover" alt="Gambar Basis Data">
+  <div class="p-6">
+    <h3 class="font-semibold text-2xl text-gray-800">Basis Data Kelas 11</h3>
+    <p class="text-gray-600 mt-3 text-lg">
+  Memahami sistem manajemen basis data (DBMS), struktur perintah SQL seperti DDL, DML, dan DCL, serta teknik penggabungan data dengan JOIN dan penggunaan sub query dalam relasi antar tabel.
+</p>
+    <a href="materi-db.html" class="inline-block mt-4 text-green-600 hover:underline font-medium">
+      Baca Selengkapnya →
+    </a>
+  </div>
+</div>
+
+
+  <!-- Materi 3 -->
+<div id="kelas12" class="bg-white rounded-lg border-l-4 border-purple-500 shadow-md overflow-hidden max-w-5xl mx-auto mb-10">
+  <img src="https://picsum.photos/id/1070/1200/500" class="w-full h-64 object-cover" alt="Gambar Web Dasar">
+  <div class="p-6">
+    <h3 class="font-semibold text-2xl text-gray-800">Pemrograman Web Kelas 11</h3>
+<p class="text-gray-600 mt-3 text-lg">
+  Mempelajari struktur dan logika dasar halaman web dengan HTML dan CSS, dilanjutkan dengan penggunaan PHP sebagai back-end, API untuk komunikasi antar sistem, serta konsep keamanan seperti session, cookie, dan pencegahan session hijacking.
+</p>
+    <a href="web.html" class="inline-block mt-4 text-purple-600 hover:underline font-medium">
+      Baca Selengkapnya →
+    </a>
+  </div>
+</div>
+
+<!-- Kelas 11 - PBTGM -->
+<div id="kelas11" class="bg-white rounded-lg border-l-4 border-green-500 shadow-md overflow-hidden max-w-5xl mx-auto mb-10">
+  <img src="https://picsum.photos/id/1032/1200/500" class="w-full h-64 object-cover" alt="Gambar PBTGM">
+  <div class="p-6">
+    <h3 class="font-semibold text-2xl text-gray-800">PBTGM</h3>
+<p class="text-gray-600 mt-3 text-lg">
+  Mempelajari dasar-dasar pemrograman menggunakan bahasa C++, mencakup struktur program, variabel, tipe data, percabangan, perulangan, dan fungsi dasar dalam pengembangan perangkat lunak.
+</p>
+    <a href="pbtgm.html" class="inline-block mt-4 text-green-600 hover:underline font-medium">
+      Baca Selengkapnya →
+    </a>
+  </div>
+</div>
+
+<!-- Kelas 12 - PPB -->
+<div id="kelas12" class="bg-white p-4 rounded-lg border-l-4 border-purple-500 shadow max-w-5xl mx-auto mb-10">
+  <img src="https://picsum.photos/id/1085/1200/500" class="w-full h-64 object-cover rounded" alt="Gambar PPB">
+  <div class="p-4">
+    <h3 class="font-semibold text-2xl text-gray-800">PPB (Pemrograman Perangkat Bergerak)</h3>
+<p class="text-gray-600 mt-3 text-lg">
+  Mempelajari pengembangan aplikasi mobile modern menggunakan Flutter dan bahasa Dart untuk platform Android.
+</p>
+    <a href="ppb.html" class="inline-block mt-4 text-purple-600 hover:underline font-medium">
+      Baca Selengkapnya →
+    </a>
+  </div>
+</div>
+
+
+  <!-- Materi 6 -->
+<div id="kelas10" class="bg-white p-4 rounded-lg border-l-4 border-blue-500 shadow max-w-5xl mx-auto mb-10">
+  <img src="https://picsum.photos/id/1044/1200/500" class="w-full h-64 object-cover rounded" alt="Gambar PKWU">
+  <div class="p-4">
+    <h3 class="font-semibold text-2xl text-gray-800">PKWU (Produk Kreatif dan Kewirausahaan)</h3>
+<p class="text-gray-600 mt-3 text-lg">
+  Mengembangkan ide bisnis dengan analisis SWOT, mengenal perlindungan HAKI, dan menghitung BEP untuk perencanaan usaha yang tepat.
+</p>
+    <a href="pkwu.html" class="inline-block mt-4 text-blue-600 hover:underline font-medium">
+      Baca Selengkapnya →
+    </a>
+  </div>
+</div>
+
+</main>
+        <!-- Sidebar -->
+        <aside class="space-y-6">
+            <div class="bg-white p-6 rounded-lg shadow">
+                <h4 class="text-xl font-semibold text-gray-800 mb-2">👤 Tentang Saya</h4>
+                <p class="text-sm text-gray-600 text-center">Halo! Saya penulis blog ini. Saya suka menulis, ngoding,
+                    dan berbagi hal positif ke dunia.</p>
+            </div>
+
+            <div class="bg-white p-6 rounded-lg shadow">
+  <h4 class="text-xl font-semibold text-gray-800 mb-4">📌 Kategori Materi</h4>
+  <ul class="space-y-2 text-blue-600 font-medium">
+    <li><a href="#html-css" class="hover:underline">HTML & CSS</a></li>
+    <li><a href="#cpp" class="hover:underline">C++ Dasar</a></li>
+    <li><a href="#flutter" class="hover:underline">Flutter & Dart</a></li>
+    <li><a href="#basisdata" class="hover:underline">Basis Data (SQL, Join, DDL, DML)</a></li>
+    <li><a href="#pkwu" class="hover:underline">PKWU (SWOT, HAKI, BEP)</a></li>
+    <li><a href="#ppb" class="hover:underline">PPB (Pemrograman Perangkat Bergerak)</a></li>
+    <li><a href="#spk" class="hover:underline">Sistem Pengambilan Keputusan</a></li>
+  </ul>
+</div>
+
+        </aside>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-white py-6 border-t mt-10">
+        <div class="max-w-7xl mx-auto px-4 text-center text-sm text-gray-500">
+            &copy; 2025 BlogKu. Wohallaw
+        </div>
+    </footer>
+    <script>
+  function toggleDetail(id) {
+    const el = document.getElementById(id);
+    el.classList.toggle('hidden');
+  }
+</script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Materi: Basis Data Lanjutan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans leading-relaxed tracking-wide">
+
+  <div class="max-w-6xl mx-auto p-8 bg-white shadow-md mt-10 rounded-lg">
+    <img src="https://picsum.photos/id/1043/1600/500" class="rounded-lg mb-6 w-full h-auto" />
+
+    <h1 class="text-4xl font-bold text-gray-800 mb-6">Materi: Basis Data Lanjutan</h1>
+
+    <p class="text-gray-700 text-lg mb-6">
+      Materi ini membahas konsep lanjutan dalam basis data seperti perintah SQL (DDL, DML, DCL), subquery, dan penggunaan JOIN untuk menggabungkan data dari beberapa tabel. Sangat penting untuk kamu yang ingin menjadi programmer atau pengembang aplikasi.
+    </p>
+
+    <h2 class="text-2xl font-semibold text-gray-800 mt-6 mb-3">1. DBMS (Database Management System)</h2>
+    <p class="text-gray-700 mb-5">
+      DBMS adalah sistem perangkat lunak untuk membuat dan mengelola database. Contoh: MySQL, Oracle, PostgreSQL, SQL Server. DBMS memungkinkan pengguna untuk menyimpan, mengakses, mengubah, dan menghapus data secara efisien.
+    </p>
+
+    <h2 class="text-2xl font-semibold text-gray-800 mb-3">2. DDL (Data Definition Language)</h2>
+    <ul class="list-disc list-inside text-gray-700 mb-5">
+      <li><code>CREATE</code> – Membuat tabel atau objek database.</li>
+      <li><code>ALTER</code> – Mengubah struktur tabel (menambah/ubah kolom).</li>
+      <li><code>DROP</code> – Menghapus tabel atau objek.</li>
+    </ul>
+
+    <h2 class="text-2xl font-semibold text-gray-800 mb-3">3. DML (Data Manipulation Language)</h2>
+    <ul class="list-disc list-inside text-gray-700 mb-5">
+      <li><code>SELECT</code> – Mengambil data dari tabel.</li>
+      <li><code>INSERT</code> – Menambahkan data ke tabel.</li>
+      <li><code>UPDATE</code> – Mengubah data di tabel.</li>
+      <li><code>DELETE</code> – Menghapus data dari tabel.</li>
+    </ul>
+
+    <h2 class="text-2xl font-semibold text-gray-800 mb-3">4. DCL (Data Control Language)</h2>
+    <ul class="list-disc list-inside text-gray-700 mb-5">
+      <li><code>GRANT</code> – Memberi hak akses kepada pengguna.</li>
+      <li><code>REVOKE</code> – Menghapus hak akses dari pengguna.</li>
+    </ul>
+
+    <h2 class="text-2xl font-semibold text-gray-800 mb-3">5. Subquery (Query Bersarang)</h2>
+    <p class="text-gray-700 mb-3">
+      Subquery adalah query di dalam query lain. Contoh:
+    </p>
+    <pre class="bg-gray-100 p-3 rounded text-sm overflow-auto mb-5">
+SELECT * FROM produk 
+WHERE harga &gt; (SELECT AVG(harga) FROM produk);
+    </pre>
+    <p class="text-gray-700 mb-5">Penjelasan: Menampilkan produk yang harganya di atas rata-rata.</p>
+
+    <h2 class="text-2xl font-semibold text-gray-800 mb-3">6. JOIN (Menggabungkan Tabel)</h2>
+    <p class="text-gray-700 mb-3">JOIN digunakan untuk menggabungkan data dari dua atau lebih tabel yang memiliki relasi.</p>
+    <ul class="list-disc list-inside text-gray-700 mb-3">
+      <li><strong>INNER JOIN</strong>: Menampilkan data yang cocok di kedua tabel.</li>
+      <li><strong>LEFT JOIN</strong>: Menampilkan semua data dari tabel kiri dan yang cocok dari tabel kanan.</li>
+      <li><strong>RIGHT JOIN</strong>: Menampilkan semua data dari tabel kanan dan yang cocok dari tabel kiri.</li>
+    </ul>
+    <pre class="bg-gray-100 p-3 rounded text-sm overflow-auto mb-6">
+SELECT pelanggan.nama, transaksi.total
+FROM pelanggan
+INNER JOIN transaksi ON pelanggan.id = transaksi.pelanggan_id;
+    </pre>
+    <p class="text-gray-700 mb-5">Penjelasan: Menampilkan nama pelanggan beserta total transaksi mereka.</p>
+
+    <a href="index.html" class="inline-block mt-6 px-5 py-2 bg-green-600 text-white rounded hover:bg-green-700 transition">
+      ← Kembali ke Daftar Materi
+    </a>
+  </div>
+
+</body>
+</html>
